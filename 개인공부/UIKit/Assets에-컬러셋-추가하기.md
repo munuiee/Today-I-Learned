@@ -24,7 +24,7 @@ Any Appearance, Dark 두 개가 뜨는데, Dark 색상을 따로 지정할 경�
 <br>
 <br>
 
-- 8-bit (0~255): 각 RGB 값을 0~255값 내외로 지정하는 방식
+- 8-bit (0 ~ 255): 각 RGB 값을 0 ~ 255값 내외로 지정하는 방식
 - 8-bit Hexadecimal: 16진수 형태의 색상 표기법
 
 <br>
@@ -47,6 +47,7 @@ Any Appearance, Dark 두 개가 뜨는데, Dark 색상을 따로 지정할 경�
 
 ### 코드 영역에서 적용하기
 `self.myButton.backgroundColor = UIColor(named: Color)`
+<br>
 `self.myButton.backgroundColor = .Color`
 
 
