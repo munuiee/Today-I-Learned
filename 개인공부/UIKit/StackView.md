@@ -52,10 +52,10 @@ StackView는 내부 뷰의 크기에 따라 사이즈가 자동으로 정해지�
 <br><br><br>
 
 ### 💠 Vertical StackView Alignment
-1. Fill: StackView의 너비에 맞춰져 늘어나면서 정렬되며, 디폴트 값임
-2. Leading: 서브뷰의 원래 길이를 유지함녀서 StackView의 글자 시작 방향부터 정렬되어서 채워짐
+1. Fill: StackView의 너비에 맞춰 늘어나면서 정렬되며, 디폴트 값임
+2. Leading: 서브뷰의 원래 길이를 유지하면서 StackView의 글자 시작 방향부터 정렬되어서 채워짐
 3. Center: 서브뷰들의 Center가 StackView의 Center에 배치
-4. Trailing: 서브뷰들의 원래 길이를 유지하면서 StackView의 글자가 끝나느 방향부터 정렬되어서 채워짐
+4. Trailing: 서브뷰들의 원래 길이를 유지하면서 StackView의 글자가 끝나는 방향부터 정렬되어서 채워짐
 
 <br>
 위와 같은 조건으로 핑크색 레이블에 Width 100을 줬다.
