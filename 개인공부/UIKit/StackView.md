@@ -120,6 +120,6 @@ Spacing을 20으로 설정했더라도 이와 상관 없이 뷰들의 Spacing이
 
 #### 4️⃣ Equal Centering
 <img width="426" height="274" alt="스크린샷 2025-08-18 오후 4 02 17" src="https://github.com/user-attachments/assets/fd0cbed1-775e-44a9-8160-5bfbf7ae1e52" />
-<br> 가운데를 기준으로 간격이 맞춰진짐
+<br> 가운데를 기준으로 간격이 맞춰짐
 
 <br><br>
