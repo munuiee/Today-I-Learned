@@ -13,6 +13,8 @@ AutoLayout을 양쪽에 45, 위 150, 아래 200을 주고 아이폰 16과 아이
 
 <img width="483" height="978" alt="스크린샷 2025-08-18 오후 7 58 12" src="https://github.com/user-attachments/assets/c9e94c1a-ee19-44e4-9ae2-998fdbd298e2" /> | <img width="813" height="1146" alt="스크린샷 2025-08-18 오후 7 59 57" src="https://github.com/user-attachments/assets/847dfb55-06c9-42bb-8ce5-e9886611a14b" /> 
 ---|---|
+
+<br>
 담곰이 이미지가 깨지지 않고 양옆아래위 너비가 똑같은 값으로 유지되는 걸 볼 수 있다.
 
 <br><br>
