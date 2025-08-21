@@ -72,7 +72,7 @@ case .ordered: // .ordered 상태일 때 아래 코드 실행
 	print("주문 완료!")
 case .shipping(let trackingNumber): 
 	print"("배송중! 송장번호: \(trackingNumber)")
-case .delivereCompleted(let date): 
+case .delivereCompleted(let date): // 무조전 변수 혹은 상수로 바인딩
 	print("배송완료! 배송일: \(date)")
 }
 ```
