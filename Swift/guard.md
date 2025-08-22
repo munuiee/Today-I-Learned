@@ -1,6 +1,6 @@
 # guard
 조건이 안 맞을 때 빠져나오는 문법 (= 안전장치)
-```
+```swift
 guard 조건 else {
 	return / break / throw / continue
 }
@@ -10,7 +10,7 @@ guard 조건 else {
 
 <br>
 
-```
+```swift
 func checkAdult(age: Int) {
 	if age < 18 {
     	print("성인이 아닙니다.")
@@ -20,7 +20,7 @@ func checkAdult(age: Int) {
 ```
 
 ⬇️ `guard`
-```
+```swift
 func checkAdult(age: Int) {
 	guard age >= 18 else {
     	print("성인이 아닙니다.")
@@ -34,7 +34,7 @@ func checkAdult(age: Int) {
 <br>
 
 #### 여러 조건 검사
-```
+```swift
 func login(id: String?, password: String?) {
 	guard let id = id else {
     	print("아이디 없음")
