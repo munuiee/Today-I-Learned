@@ -28,7 +28,7 @@
 - `init` 키워드를 사용하여 모든 변수, 상수를 초기화 해야 한다.
 - 변수나 상수에 기본값을 정해주거나 값이 없음을 나타내는 Optional 타입으로 선언하면 초기화하지 않아도 된다.
 
-```
+```swift
 enum Season: String {
 	case spring
     case summer
