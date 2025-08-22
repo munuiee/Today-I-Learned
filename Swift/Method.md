@@ -7,7 +7,7 @@
 
 ## 인스턴스 메서드 Instance Method
 인스턴스를 통해서 호출
-```
+```swift
 class Person {
 	var name: String = "Default Name"
     var age: Int = 15
@@ -33,7 +33,7 @@ person.printIndtroduce()
 
 ### Reference Type
 `class`로 만들어진 `인스턴스`는 `Reference Type`이므로 인스턴스 메서드에서 프로퍼티 값을 직접 변경 가능
-```
+```swift
 class Person {
 	var name: String = 'Default Name"
     var age: Int = 15
@@ -55,7 +55,7 @@ print(person.age) // 16
 
 ### Value Type
 `struct`, `enum`은 `value type`이므로, 인스턴스 메서드에서 프로퍼티를 직접 변경할 수 없으며 수정하려면 `mutating` 키워드를 사용해야 한다.
-```
+```swift
 struct Person {
 	var name: String = "Default Name"
     var age: Int = 15
@@ -76,7 +76,7 @@ print(person.age) // 16
 ```
 
 💠 `enum` 메서드에서 값 변경하기
-```
+```swift
 enum VideoPlayerState {
 	case off
     case playing
@@ -114,7 +114,7 @@ print(playerState) // completed
 - 함수 내부에 있는 타입 프로퍼티에만 접근 가능. 인스턴스를 만들지 않고 사용하기 때문에 다른 프로퍼티에는 접근 불가
 
 💠 `struct`, `class`에서 타입 메서드 사용 방법
-```
+```swift
 struct Person {
 	static var structName = "Person"
     var name: String = "Default Name"
@@ -134,7 +134,7 @@ print(Person.introduceType()) // 출력 값 : 안녕하세요. 저는 Person 타
 ```
 
 💠 `enum`에서 타입 메서드 사용 방법
-```
+```swift
 enum Season {
     static var enumName = "Season"
     case spring
