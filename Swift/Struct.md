@@ -20,7 +20,7 @@
 <br>
 
 ### 기본 정의
-```
+```swift
 struct 구조체이름 {
 	// 프로퍼티 선언
     // 함수 구현
@@ -44,7 +44,7 @@ struct 구조체이름 {
 
 1️⃣ `memberwise init` 사용
 - 자동으로 `init` 생성
-```
+```swift
 struct Person {
 	var name: String
     var age: Int
@@ -54,7 +54,7 @@ var person = Person(name: "Jihye", age: 26)
 ```
 - 기본값을 할당한 프로퍼티가 있을 때 멤버와이즈 init은 생략하고 만들어줌
 
-```
+```swift
 struct Person {
 	var name: String
     var age: Int = 0
@@ -67,7 +67,7 @@ Person(name: "Jihye", age: 26)
 <br>
 
 2️⃣ 기본값 초기화
-```
+```swift
 struct Person {
 	var name: String = "이름없음"
     var age: Int = 1
@@ -83,7 +83,7 @@ Person(name: "Jihye", age: 26)
 
 3️⃣ 지정 초기화
 - `init`을 직접 생성하면 `memberwise init`이 사용되지 않음
-```
+```swift
 struct Person {
 	var name: String = "이름없음"
     var age: Int = 1
@@ -102,7 +102,7 @@ Person(name: "Jihye", age: 26) // Error: name, age를 파라미터로 받는 ini
 <br>
 
 4️⃣ 여러개의 `init` 사용
-```
+```swift
 struct Person {
 	var name: String
     var age: Int
@@ -128,4 +128,4 @@ Person(name: "Jihye")
 Person(age: 26) // // Error : 파라미터로 age만 전달하는 init이 없기떄문에 컴파일 오류 발생
 Person(name: "Jihye", age: 26)
 
-
+```
