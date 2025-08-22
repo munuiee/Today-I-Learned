@@ -4,7 +4,7 @@ Swift에서는 반복문에 조건을 바로 붙일 수 있다. <br>
 <br>
 
 #### if를 썼을 때
-```
+```swift
 for i in 1...10 {
 	if i % 2 != 0 {
     	print(i)
@@ -15,7 +15,7 @@ for i in 1...10 {
 <br>
 
 #### where을 썼을 때
-```
+```swift
 for i in 1...10 where i % 2 != 0 {
 	print(i)
 }
@@ -25,7 +25,7 @@ for i in 1...10 where i % 2 != 0 {
 <br>
 
 내가 연습한 코드
-```
+```swift
 func sumOdd (number: Int) -> Int {
     var sum = 0
     for i in 1...number where i % 2 != 0 {
