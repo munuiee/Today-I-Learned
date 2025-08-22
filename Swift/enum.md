@@ -10,7 +10,7 @@
 <br>
 
 ### 기본 선언 방법
-```
+```swift
 enum Season {
 	case spring
     case summer
@@ -25,7 +25,7 @@ enum Season {
 ```
 
 #### 사용 방법
-```
+```swift
 Season.spring // enum의 이름 뒤에 .을 찍고 데이터에 접근
 Season.summer
 
@@ -47,7 +47,7 @@ summer =. spring // summer의타입이 Spring으로 판단됨
 - 각 `case`와 함께 타입을 지정하여 선언하면 연관값을 가질 수 있음
 
 ### 선언 방법
-```
+```swift
 enum TypeName {
 	case caseName(Type)
     case caseName(Type, Type, ...) // 튜플 형태로 타입 명시 가능
@@ -62,7 +62,7 @@ enum DeliveryStatus {
 ```
 
 #### 사용 방법
-```
+```swift
 let status = DeliveryStatus.shipping(tarckingNumber: "123")
 
 print(status) // shipping(trackingNumber: "123")
@@ -93,7 +93,7 @@ case .delivereCompleted(let date): // 무조전 변수 혹은 상수로 바인�
 3️⃣ String Type <br>
 
 #### 사용방법
-```
+```swift
 // 이름(Season) 뒤에 String을 붙여줘서 원시값을 String으로 명시
 enum Season: String {	
 	case spring = "값을 정할 수 있어요!"
@@ -114,7 +114,7 @@ print(newSeason) // Optional(summer)
 ```
 
 #### 숫자형의 Raw Value
-```
+```swift
 enum Month: Int {
 	case january = 1 // 값을 정해주지 얂는다면 0부터 1씩 올라감
     case february = 3
@@ -140,7 +140,7 @@ print(month) // Optional(february)
 <br>
 
 ### `enum`에서 함수 정의
-```
+```swift
 enum Season: String {
 	case spring
     case summer
