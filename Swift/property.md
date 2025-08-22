@@ -11,7 +11,7 @@
 - 초깃값을 가질 수 있다
 - 초기화 필수! 기본값을 주거나 `init`에서 넣기
 
-```
+```swift
 struct Person {
 	var name: STtring // 값을 저장하는 저장 프로퍼티
     var age: Int = 0 // 값을 저장하는 초깃값이 있는 저장 프로퍼티
@@ -39,12 +39,12 @@ struct Person {
 - 값을 가져올 때 동작
 - 값을 리턴해야 함
 - 생략 가능
-```
+```swift
 var nameLength: Int {
 	return name.count // get 생략 가능
 }
 ```
-```
+```swift
 var nameLength: Int {
 	get {
     	return name.count
@@ -62,7 +62,7 @@ var nameLength: Int {
 - 자동으로 `newValue`라는 이름의 값이 들어옴
 - 원하면 `set(커스텀이름)` 이렇게 이름 지정 가능
 
-```
+```swift
 var score: Int = 0
 
 var level: Int {
@@ -77,7 +77,7 @@ var level: Int {
 ```
 
 💠 `newValue` 대신 커스텀 이름 쓰기
-```
+```swift
 var volume: Int {
 	get {
     	return 10
@@ -93,7 +93,7 @@ var volume: Int {
 <br>
 
 💠 `getter`와 `setter` 모두 있는 연산 프로퍼티
-```
+```swift
 struct Person {
 	var name: String
     var age: Int = 0
@@ -121,7 +121,7 @@ print(person.age) // 19
 ```
 
 💠 `setter`가 구현되지 않은 연산 프로퍼티
-```
+```swift
 struct Person {
 	var name: String // 값을 저장하는 저장 프로퍼티
     var age: Int = 0 // 값을 저장하는 초깃값이 있는 저장 프로퍼티
@@ -140,7 +140,7 @@ person.isAdult = false // Error. isAdult에는 getter만 있기 때문에 새로
 ```
 
 💠 `setter`가 구현되지 않았을 땐 `get` 키워드 생략 가능 
-```
+```swift
 struct Person {
 	var name: String
     var age: Int = 0
@@ -161,7 +161,7 @@ struct Person {
 - `타입이름.타입프로퍼티_이름` 형태로 접근
 - `static` 키워드로 선언 (오버라이드 불가)
 - 오버라이딩 허용 👉 클래스에서만 `class` 키워드 써도 됨
-```
+```swift
 struct Person {	
 	static var structName = "Person"
     
@@ -178,7 +178,7 @@ print(Person.structName) // Changed!
 ```
 
 💠 `enum`에서 사용하기
-```
+```swift
 enum Season: String {
 	case spring
     case summer
@@ -212,7 +212,7 @@ Season.enumName // Season
 - 변경되기 전의 값은 `oldValue`를 통해 접근하며, 이름을 정할 수 있음
 - 이름을 정하려면 `didSet(이름)` 형식으로 작성
 
-```
+```swift
 struct Person {
 	var name: String {
     	willset {
@@ -240,7 +240,7 @@ Jihye -> Apple
 ```
 
 💠 이름 변경해서 사용
-```
+```swift
 struct Person {
 	var name: String {
     	willSet(changeNewName) {
@@ -266,7 +266,7 @@ struct Person {
 - `var`에서만 사용 가능
 - `class`, `struct` 사용
 
-```
+```swift
 class Person {
 	var name: String = "A"
     var age: Int = 15
