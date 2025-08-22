@@ -28,7 +28,7 @@
 <br>
 
 ### 기본 정의 방법
-```
+```swift
 class 클래스이름 {
 	// 파라미터 선언
     // 메소드 선언
@@ -60,7 +60,7 @@ class 클래스이름 {
 - 모든 프로퍼티를 제대로 채우고, 부모 클래스 것도 챙겨서 위로 연결
 
 
-```
+```swift
 // 일반적인 init
 
 class Person {
@@ -79,7 +79,7 @@ let person = Person(name: "Brody", age: 25)
 <br>
 
 **상속 있는 경우**
-```
+```swift
 class Animal {
     var species: String
     init(species: String) {       // 부모 지정 초기화
@@ -103,7 +103,7 @@ class Dog: Animal {
 2️⃣ 기본값 초기화
 - 프로퍼티에 기본값을 넣으면 초기화를 진행하지 않아도 된다.
 
-```
+```swift
 class Dog {
     var name: String = "멍멍이"  // 기본값
     var age: Int = 1            // 기본값
@@ -118,7 +118,7 @@ print(d.age)   // 1
 <br>
 
 
-```
+```swift
 class Person {
 	var name: String = "이름없음"
     var age: Int = 0
@@ -145,7 +145,7 @@ class Person {
 3️⃣ 여러개의 `init` 사용
 - 여러가지 방법으로 초기화
 
-```
+```swift
 class Person {
 	var name: String
     var age: Int
@@ -174,7 +174,7 @@ class Person {
  - 클래스에서만 사용 가능
  - `self.init`을 사용하여 초기화를 도와줌
  
-```
+```swift
  class Person {
  	var name: String
     var age: Int // 기본값 제공 X
@@ -200,7 +200,7 @@ print(person.age) // 0
 - 사용이 종료된 인스턴스가 메모리에서 해제될 때 자동 호출
 - 직접 호출 불가
 
-```
+```swift
 deinit {
 	// 구현부
 }
