@@ -47,7 +47,7 @@
 <br>
 
 ### 노드 구조 
-```
+```swift
 class Node {
 	var value: Int
     var next: Node?
@@ -64,7 +64,7 @@ class Node {
 
 
 ### 링크드 리스트 클래스
-```
+```swift
 class LinkedList {
 	var head: Node?
     
