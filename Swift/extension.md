@@ -80,3 +80,43 @@ print(person.nameAge) // 길동(20세)
 person.sayHello() // 길동님 안녕하세요?
 print(person.fullName) // 홍길동 
 print(person.sayMyFullName()) // 제 이름은 홍길동입니다.
+```
+
+##  이미 있는 설계도에 기능을 추가하면 되지 않을까?
+`extension`이 따로 있는 이유
+
+### 1. 내가 만든 클래스/구조체가 아닐 때
+`Int`, `String`, `Double`, `Array`는 애플이 Swift 언어 안에 이미 만들어놓은 타입들. <br>
+그래서 우리가 직접 고쳐서 `Int` 안에 새 기능을 추가하는 건 불가능하다.
+
+<br>
+
+
+### 2. 코드 정리 
+클래스 기능이 너무 많아지면 보기 힘듦.
+이럴 때 `extension`으로 관리하면 깔끔해짐
+```swift
+class Dog {
+    var name: String = ""
+}
+
+// 짖는 기능
+extension Dog {
+    func bark() {
+        print("멍멍!")
+    }
+}
+
+// 훈련 기능
+extension Dog {
+    func sit() {
+        print("\(name)이 앉았다!")
+    }
+}
+
+```
+
+<br>
+
+### 3. 저장 속성 추가 불가 (안전성)
+- 저장 속성(메모리 차지하는 변수)은 못 넣음.
